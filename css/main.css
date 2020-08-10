@@ -1,0 +1,475 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.lang_en, .lang_ua, .lang_ru {width: 22px; height: 16px;}
+.lang_en {background: url(/images/English_adminway.png);}
+.lang_ua {background: url(/images/ua.png);}
+.lang_ru {background: url(/images/ru.png);}
+
+.sec a > b {
+  color:red;
+}
+
+.sec > a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.sec > a:hover {
+  color: black;
+}
+
+
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+    background: transparent;
+    position: fixed;
+    display: flex;
+    padding: 10px 0.5% 10px 0.5%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    font-family: 'Suez One', serif;
+}
+
+header #logo span > a {
+  float:right;
+  margin-top:10px;
+  margin-left: 2px;
+}
+@media (min-width: 701px) {
+  #logo {
+    font-size: 1.1em;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+#rec {
+  position: relative;
+  display: none;
+  left:650px;
+  font-size: 30px;
+}
+
+
+#about {
+    font-size: 1.1em;
+    display: flex;
+    padding-right: 40px;
+    align-items: center;
+
+
+}
+
+#about > a {
+
+color: #fff;
+  text-decoration: none;
+}
+
+#about > a:hover {
+  color: #b0b0b0;
+}
+
+
+#about > a {
+  margin: 0 15px;
+  white-space: nowrap;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+  z-index: 5000;
+  background-color: #000;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: white;
+}
+
+.fixed #about a {color: white}
+.fixed #about a:hover {color: #7c7c7c}
+
+/* Главный блок на сайте */
+
+
+
+
+#top {
+  width: 100%;
+  background: url(http://meneghetti.ru/files/content/4/829/7O5A8662.jpg);
+
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 9%;
+
+}
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 2em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  #top {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  #top {
+    font-size: 0.9em;
+  }
+}
+
+#top h1 {
+  padding-top: 10%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+
+/* Блок с возможностями */
+
+#main {
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+  #main {
+    padding: 100px 20%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #main {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #main div {
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+#main div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#main h2 {font-size: 3em}
+#main span {color: #a0a0a0}
+
+/* Блок с преимуществами */
+
+#overview {
+  float: left;
+  background-image: url(https://images.unsplash.com/1/work-station-straight-on-view.jpg?ixlib=rb-0.3.5&s=d055e15d0b8fd2de7295b726274d312b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 0 0;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3em;
+
+}
+
+#overview h2 {font-size: 4em}
+#overview h4 {color: #ccc; font-size: 1.5em}
+
+@media (min-width: 561px) {
+  #overview h2 {font-size: 4em}
+}
+
+@media (max-width: 560px) {
+  #overview h2 {font-size: 2em}
+}
+
+#overview .img {
+  float: left;
+  width: 25%;
+  margin-left: 6%;
+  margin-top: 150px;
+  position: relative;
+}
+
+
+
+
+
+#overview img {
+  background: #fafafa;
+
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  height:250px;
+  max-width: 500px;
+  padding: 100px auto;
+}
+
+#overview img:hover{
+  border: 1px solid orange;
+}
+
+#overview span {
+
+  position: absolute;
+  left:2%;
+  width: 95%;
+  font-size: 1.8em;
+  color:white;
+}
+
+@media (max-width: 700px) {
+  #overview .img {
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+
+/* Блок с контактами */
+#contacts {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 5%;
+  border-top: 4px solid #ccc;
+  background: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5 {
+
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+#contacts h5 {font-size: 2em; color: #4f4f4f}
+
+#form_input {
+  margin-top:15px;
+  font-size: 1.1em;
+}
+
+@media (min-width: 1051px) {
+  #form_input {
+    width: 35%;
+    margin-left: 38%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #form_input {
+    width: 90%;
+    margin-left: 10%;
+  }
+}
+
+#form_input label {
+  color: #505050;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-family: 'Roboto Slab', serif;
+}
+
+#form_input label > span {
+  color: #e87e7e;
+}
+
+#form_input input,#form_input textarea {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 1.3em;
+  color: #4a4a4a;
+}
+
+
+
+.loginp {
+
+  text-align:left;
+
+  padding-top: 5%;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+  border-color: #333;
+}
+
+.btn {
+  text-align: center;
+  width: 72%;
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: #333130;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  border: 0px solid #333130;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+
+.btnreg {
+  background-color: #894725;
+  margin-top: 20px;
+  width: 75%;
+  font-size: 1em;
+  text-shadow: red 0 0 0;
+}
+
+
+
+
+
+#autor {
+  text-align: center;
+
+
+  float: left;
+  font-size: 0.9em;
+}
+
+#autor input {
+  margin-left: 10px;
+  float: right;
+}
+
+#autor a {
+  text-decoration:none;
+  margin-left: 20px;
+  float: right;
+  color: #894725;
+}
+
+#autor a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+/* Вопросы и ответы */
+
+#faq {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 40px;
+}
